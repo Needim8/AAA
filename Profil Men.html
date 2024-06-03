@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Management</title>
+  <link rel="stylesheet" href="css/Prof Men.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+</head>
+<body>
+<main class="account-main">
+  <aside class="sidebar">
+    <nav class="account-nav">
+      <h2>Account Management</h2>
+      <ul>
+        <li><a href="#" data-section="profile-picture"><i class="fas fa-user-circle"></i> Profile Picture</a></li>
+        <li><a href="#" data-section="personal-info"><i class="fas fa-info-circle"></i> Personal Information</a></li>
+        <li><a href="#" data-section="account-security"><i class="fas fa-lock"></i> Account Security</a></li>
+        <li><a href="#" data-section="two-factor-auth"><i class="fas fa-shield-alt"></i> Two-Factor Authentication</a></li>
+        <li><a href="#" data-section="login-management"><i class="fas fa-sign-out-alt"></i> Login Management</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <section class="account-content">
+    <button class="home-button" onclick="window.location.href='index.html'">Back to Home</button>
+    <div id="profile-picture" class="account-section active">
+      <h2>Profile Picture</h2>
+      <p>Your ID is used by users to find you through the social panel in web.</p>
+      <form id="profile-picture-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <div class="profile-picture-content">
+          <img src="img/default-profile.png" alt="Profile Picture">
+          <input type="file" id="profile-image-upload">
+          <button type="submit">Upload Your Avatar</button>
+          <p>Upload a file from your device. Image should be square, at least 184px x 184px.</p>
+        </div>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+    <div id="personal-info" class="account-section">
+      <h2>Personal Information</h2>
+      <p>This information is private and will not be shared with other players. Read the privacy notice anytime!</p>
+      <form id="personal-info-form">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+        <label for="country">Country/Region</label>
+        <select id="country" name="country">
+          <option value="BIH">Bosnia and Herzegovina</option>
+          <option value="USA">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="GER">Germany</option>
+          <!-- Add more options as needed -->
+        </select>
+        <label for="dob">Date of Birth</label>
+        <input type="text" id="dob" name="dob">
+        <button type="submit">Save and Verify</button>
+      </form>
+    </div>
+    <div id="account-security" class="account-section">
+      <h2>Account Sign-In</h2>
+      <p>We recommend that you periodically update your password to help prevent unauthorized access to your account.</p>
+      <form id="account-security-form">
+        <label for="current-password">Current Password</label>
+        <input type="password" id="current-password" name="current-password">
+        <label for="new-password">New Password</label>
+        <input type="password" id="new-password" name="new-password">
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+    <div id="two-factor-auth" class="account-section">
+      <h2>Two-Factor Authentication</h2>
+      <p>Protect your account from unauthorized access by requiring a secure code when signing in.</p>
+      <p>Have questions? Learn more about Two-Factor Authentication.</p>
+      <button type="button">Enable 2FA</button>
+    </div>
+    <div id="login-management" class="account-section">
+      <h2>Login Management</h2>
+      <p>Worried that your account or password has been compromised? You can forcibly log out from all apps, sites, and games.</p>
+      <button type="button">Log Out Everywhere</button>
+    </div>
+  </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="module" src="js/supabaseClient.js"></script>
+<script type="module" src="js/Prof%20M.mjs"></script>
+</body>
+</html>

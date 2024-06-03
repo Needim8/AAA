@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-image: url('https://mcctlegtqexdmwpogzmd.supabase.co/storage/v1/object/public/images/Povrsina.png'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  color: #ffffff;
+  outline: none;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.search-bar i {
+  color: #ffffff;
+}
+
+.logo {
+  margin-right: 20px; /* Adjust spacing */
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a i {
+  margin-right: 8px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.notifications i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.profile-status {
+  color: green;
+}
+
+main {
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.game-details {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.game-details h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.game-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#main-image {
+  max-width: 50%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 20px;
+}
+
+.thumbnails img {
+  width: auto; /* Maintain aspect ratio */
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.left-section {
+  width: 60%;
+}
+
+.right-section {
+  width: 35%;
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.right-section-description {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-this-game, .system-requirements, .customer-reviews {
+  margin-top: 40px;
+}
+
+.about-this-game h2, .system-requirements h2, .customer-reviews h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.system-requirements .requirements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.system-requirements .minimum, .system-requirements .recommended {
+  width: 48%;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.system-requirements h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.system-requirements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.system-requirements li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.customer-reviews .reviews-summary {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.customer-reviews h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.customer-reviews p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.reviews {
+  margin-top: 40px;
+}
+
+.reviews h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.review-container {
+  position: relative;
+  overflow: hidden;
+  height: auto; /* Adjust based on the height of your reviews */
+}
+
+.review-page {
+  display: none;
+}
+
+.review-page.active {
+  display: block;
+}
+
+.review {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reviewer-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.review-content {
+  margin-bottom: 20px;
+}
+
+.review-feedback {
+  display: flex;
+  gap: 100px;
+}
+
+.review-feedback button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-feedback button:hover {
+  background-color: #e55b00;
+}
+
+.review-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.review-pagination button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.review-pagination button:hover {
+  background-color: #e55b00;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.comment-section textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.comment-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-section button:hover {
+  background-color: #e55b00;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Review Web</title>
+  <link rel="stylesheet" href="css/Library.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-search"></i>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="game-reviews.html"><i class="fas fa-star"></i> Game Reviews</a></li>
+        <li><a href="Platforms.html"><i class="fas fa-gamepad"></i> Popular Platforms</a></li>
+        <li><a href="Library.html"><i class="fas fa-book"></i> Library</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="notifications">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-user-friends"></i>
+        <i class="fas fa-cog"></i>
+      </div>
+      <div class="profile">
+        <img src="img/Prof.jpeg" alt="User Profile" class="profile-img">
+        <span class="profile-name">Shinigami</span>
+        <span class="profile-status">Online</span>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="content-wrapper">
+    <!-- Featured Game Section -->
+    <section class="featured-game-section">
+      <div class="featured-game-content">
+        <img src="img/Unch.jpg" alt="Uncharted 4: A Thief's End">
+        <div class="featured-game-details">
+          <h1>Uncharted 4: A Thief's End</h1>
+          <button class="download-button">Download Game</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Statistics Section -->
+    <section class="game-stats-section">
+      <h2>Game Statistics</h2>
+      <div class="game-stats-content">
+        <div class="play-time">
+          <div class="play-time-text">
+            <h3>Play Time</h3>
+            <p>100h 13m</p>
+            <p>Since 15.05.2016</p>
+          </div>
+          <img src="img/Statis.png" alt="Play Time">
+        </div>
+        <div class="list-breakdown">
+          <h3>List Breakdown</h3>
+          <div class="chart">
+            <canvas id="listBreakdownChart"></canvas>
+          </div>
+        </div>
+        <div class="by-platform">
+          <h3>By Platform</h3>
+          <div class="platform-chart">
+            <canvas id="platformChart"></canvas>
+          </div>
+        </div>
+        <div class="rewards">
+          <h3>Rewards</h3>
+          <div class="rewards-images">
+            <div class="reward-image">
+              <img src="img/Pr.png" alt="Reward 1">
+            </div>
+            <div class="reward-image">
+              <img src="img/Dr.png" alt="Reward 2">
+            </div>
+            <div class="reward-image">
+              <img src="img/Tr.png" alt="Reward 3">
+            </div>
+            <div class="reward-image">
+              <img src="img/Ct.png" alt="Reward 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/Library.js"></script>
+</body>
+</html>

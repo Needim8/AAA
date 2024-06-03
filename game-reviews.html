@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Reviews</title>
+  <link rel="stylesheet" href="css/game-reviews.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-search"></i>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="ViewAll.html"><i class="fas fa-star"></i> Game Reviews</a></li>
+        <li><a href="Platforms.html"><i class="fas fa-gamepad"></i> Popular Platforms</a></li>
+        <li><a href="Library.html"><i class="fas fa-book"></i> Library</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="notifications">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-user-friends"></i>
+        <i class="fas fa-cog"></i>
+      </div>
+      <div class="profile">
+        <img src="img/Prof.jpeg" alt="User Profile" class="profile-img" id="profile-img">
+        <span class="profile-name">Shinigami</span>
+        <span class="profile-status">Online</span>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="game-details">
+    <h1 id="game-title">Game Title</h1>
+    <div class="game-media">
+      <img src="img/default.png" alt="Game Image" id="main-image" class="main-image">
+      <div class="thumbnails" id="thumbnails">
+        <!-- Thumbnails will be added dynamically -->
+      </div>
+    </div>
+    <div class="game-info">
+      <div class="left-section">
+        <div class="about-this-game">
+          <h2>About This Game</h2>
+          <p id="game-description">Game description will be added dynamically.</p>
+        </div>
+        <div class="system-requirements">
+          <h2>System Requirements</h2>
+          <div class="requirements" id="system-requirements">
+            <!-- System requirements will be added dynamically -->
+          </div>
+        </div>
+        <div class="customer-reviews">
+          <h2>Customer Reviews</h2>
+          <div class="reviews-summary">
+            <div class="overall-reviews">
+              <h3>Overall Reviews:</h3>
+              <p id="overall-reviews">Overall reviews will be added dynamically.</p>
+            </div>
+            <div class="recent-reviews">
+              <h3>Recent Reviews:</h3>
+              <p id="recent-reviews">Recent reviews will be added dynamically.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <img src="img/default.png" alt="Game Cover" id="cover-image">
+        <div class="right-section-description">
+          <p id="right-description">Description will be added dynamically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comments Section -->
+  <section class="reviews">
+    <h2>Most Helpful Reviews in the Past 30 Days</h2>
+    <div class="review-container" id="review-container">
+      <!-- Reviews will be inserted here dynamically -->
+    </div>
+    <div class="review-pagination" id="review-pagination">
+      <!-- Pagination buttons will be inserted here dynamically -->
+    </div>
+    <div class="comment-section">
+      <textarea id="new-comment" placeholder="Add your comment here"></textarea>
+      <button id="submit-comment">Submit Comment</button>
+    </div>
+  </section>
+</main>
+<script type="module" src="js/supabaseClient.js"></script>
+<script type="module" src="js/game-reviews.js"></script>
+</body>
+</html>

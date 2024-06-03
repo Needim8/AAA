@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Review App</title>
+  <link rel="stylesheet" href="css/VewiAll.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-search"></i>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="ViewAll.html"><i class="fas fa-star"></i> Game Reviews</a></li>
+        <li><a href="Platforms.html"><i class="fas fa-gamepad"></i> Popular Platforms</a></li>
+        <li><a href="Library.html"><i class="fas fa-book"></i> Library</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="notifications">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-user-friends"></i>
+        <i class="fas fa-cog"></i>
+      </div>
+      <div class="profile">
+        <img src="images/Prof.jpeg" alt="User Profile" class="profile-img">
+        <span class="profile-name">Shinigami</span>
+        <span class="profile-status">Online</span>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="filters">
+  <select id="system">
+    <option value="all">System</option>
+    <option value="pc">PC</option>
+    <option value="mac">Mac</option>
+    <option value="linux">Linux</option>
+    <option value="switch">Switch</option>
+    <option value="ps4">Playstation 4</option>
+    <option value="ps5">Playstation 5</option>
+    <option value="xbox-one">Xbox One</option>
+    <option value="xbox-series-x">Xbox Series X|S</option>
+    <option value="geforce-now">GeForce Now</option>
+  </select>
+  <select id="platform">
+    <option value="all">Platform</option>
+    <option value="battle-net">Battle.Net</option>
+    <option value="epic-games">Epic Games</option>
+    <option value="gog">GOG.Com</option>
+    <option value="instant-gaming">Instant Gaming</option>
+    <option value="microsoft-store">Microsoft Store</option>
+    <option value="ncsoft">Ncsoft</option>
+    <option value="steam">Steam</option>
+    <option value="ubisoft-connect">Ubisoft Connect</option>
+    <option value="playstation-store">Playstation Store</option>
+  </select>
+  <select id="sort">
+    <option value="popular">Sort By: Popular</option>
+    <option value="bestsellers">Bestsellers</option>
+    <option value="discount-best">Discount: Best</option>
+    <option value="price-low-to-high">Price: Low To High</option>
+    <option value="price-high-to-low">Price: High To Low</option>
+    <option value="release-recent">Release: Recent</option>
+    <option value="release-old">Release: Old</option>
+    <option value="release-best">Release: Best</option>
+    <option value="release-worst">Release: Worst</option>
+  </select>
+</div>
+<div id="content" class="gallery">
+  <!-- Dynamic content will be inserted here -->
+</div>
+<div class="pagination" id="pagination">
+  <span onclick="previousPage()">&laquo;</span>
+  <!-- Pagination numbers will be dynamically inserted here -->
+  <span onclick="nextPage()">&raquo;</span>
+</div>
+<script type="module" src="js/supabaseClient.js"></script>
+<script type="module" src="js/ViewAll.js"></script>
+</body>
+</html>

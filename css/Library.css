@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  background-image: url('img/background.jpg'); /* Add your background image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  color: #ffffff;
+  outline: none;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.search-bar i {
+  color: #ffffff;
+}
+
+.logo {
+  margin-right: 20px; /* Adjust spacing */
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 20px; /* Adjust spacing */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a i {
+  margin-right: 8px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.notifications i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.profile-status {
+  color: green;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
+.featured-game-section {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.featured-game-content {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-game-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure the image is behind the content */
+}
+
+.featured-game-details {
+  text-align: center;
+  z-index: 1; /* Ensure the text is in front of the image */
+  color: white;
+}
+
+.featured-game-details h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.download-button {
+  padding: 15px 30px;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #e55b00;
+}
+
+.game-stats-section {
+  background-color: rgba(34, 34, 34, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.game-stats-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.game-stats-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.play-time, .list-breakdown, .by-platform, .rewards {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.play-time h3, .list-breakdown h3, .by-platform h3, .rewards h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.play-time img {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.play-time-text {
+  width: 30%;
+  padding-right: 20px;
+}
+.rewards {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.rewards h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.rewards-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px; /* Add gap between images */
+}
+
+.reward-image {
+  flex: 1; /* Make sure all reward images take equal space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reward-image img {
+  width: 80%;
+  border-radius: 5px;
+}

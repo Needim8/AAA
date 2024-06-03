@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/Sty.css">
+  <script type="module">
+    import { checkUser } from './js/supabaseClient.js';
+    checkUser();
+  </script>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-search"></i>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+        <li><a href="ViewAll.html"><i class="fas fa-star"></i> Game Reviews</a></li>
+        <li><a href="Platforms.html"><i class="fas fa-gamepad"></i> Popular Platforms</a></li>
+        <li><a href="Library.html"><i class="fas fa-book"></i> Library</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <div class="login-register-buttons">
+        <button id="login-button">Login</button>
+        <button id="register-button">Register</button>
+      </div>
+      <div class="header-icons">
+        <!-- Notification and profile icons will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="content-wrapper">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-details">
+          <div class="hero-new">
+            <i class="fas fa-fire"></i> New
+          </div>
+          <h1>Ghost Of Tsushima: Director's Cut</h1>
+          <button class="hero-button">Buy Right Now</button>
+        </div>
+        <img src="img/Header.jpg" alt="Ghost Of Tsushima: Director's Cut">
+      </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section class="popular-section">
+      <h2>Popular</h2>
+      <div class="popular-cards">
+        <button class="scroll-button left"><i class="fas fa-chevron-left"></i></button>
+        <div class="card">
+          <img src="img/game--grand-theft-auto-v.jpg" alt="Grand Theft Auto V">
+          <div class="card-info">
+            <h3>Grand Theft Auto V</h3>
+            <div class="rating">
+              <span>⭐⭐⭐⭐</span>
+              <span>12K</span>
+            </div>
+            <button class="cart-button"><i class="fas fa-shopping-cart"></i> To Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/game--diablo-iv.jpg" alt="Diablo IV">
+          <div class="card-info">
+            <h3>Diablo IV</h3>
+            <div class="rating">
+              <span>⭐⭐⭐⭐</span>
+              <span>12m</span>
+            </div>
+            <button class="download-button"><i class="fas fa-download"></i> Download</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/game--call-of-duty-modern-warfare-ii-iii-warzone-2-0.jpg" alt="Call Of Duty: Warzone">
+          <div class="card-info">
+            <h3>Call Of Duty: Warzone</h3>
+            <div class="rating">
+              <span>⭐⭐⭐⭐</span>
+              <span>12m</span>
+            </div>
+            <button class="download-button"><i class="fas fa-download"></i> Download</button>
+          </div>
+        </div>
+        <button class="scroll-button right"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+      <h2>Trending</h2>
+      <div class="trending-cards">
+        <button class="scroll-button left"><i class="fas fa-chevron-left"></i></button>
+        <div class="card">
+          <img src="img/1.jpg" alt="Ghost Of Tsushima: Director's Cut">
+          <h3>Ghost Of Tsushima: Director's Cut</h3>
+        </div>
+        <div class="card">
+          <img src="img/3.jpg" alt="MotoGP 24">
+          <h3>MotoGP 24</h3>
+        </div>
+        <div class="card">
+          <img src="img/4.jpg" alt="Dragon's Dogma 2 Deluxe Edition">
+          <h3>Dragon's Dogma 2 Deluxe Edition</h3>
+        </div>
+        <div class="card">
+          <img src="img/2.jpg" alt="Buckshot Roulette">
+          <h3>Buckshot Roulette</h3>
+        </div>
+        <div class="card">
+          <img src="img/6.jpg" alt="The Outlast Trials">
+          <h3>The Outlast Trials</h3>
+        </div>
+        <div class="card">
+          <img src="img/5.jpg" alt="House Flipper 2">
+          <h3>House Flipper 2</h3>
+        </div>
+        <button class="scroll-button right"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+      <div class="categories-header">
+        <span>Categories</span>
+        <a href="ViewAll.html" class="view-all">View All</a>
+      </div>
+      <div class="categories-cards">
+        <div class="category-card">
+          <img src="images/Creed.jpg" alt="Action">
+          <h3>Action</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/See.jpg" alt="Adventure">
+          <h3>Adventure</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/final.jpg" alt="Arcade">
+          <h3>Arcade</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/Call.png" alt="FPS">
+          <h3>FPS</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/Tekken.jpg" alt="Fighting">
+          <h3>Fighting</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/w.jpeg" alt="RPG">
+          <h3>RPG</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/tom.jpg" alt="Single-Player">
+          <h3>Single-Player</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/civilization.jpg" alt="Strategy">
+          <h3>Strategy</h3>
+        </div>
+        <div class="category-card">
+          <img src="images/half-life.jpg" alt="VR">
+          <h3>VR</h3>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <section class="promo-section">
+      <h2>Promotional Codes</h2>
+      <div class="promo-details">
+        <p>-15%</p>
+        <p>Promo: Legend Code</p>
+        <p>For New Users</p>
+        <p>Only For 3 Games</p>
+      </div>
+    </section>
+    <section class="cart-section">
+      <h2>Cart</h2>
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="img/KITTY.jpg" alt="Little Kitty, Big City">
+          <div class="cart-info">
+            <h3>Little Kitty, Big City</h3>
+            <p>$19.99</p>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/LORDS.jpg" alt="Manor Lords">
+          <div class="cart-info">
+            <h3>Manor Lords - Europe</h3>
+            <p>$29.99</p>
+          </div>
+        </div>
+        <div class="cart-item">
+          <img src="img/Fall.jpg" alt="Fallout NV">
+          <div class="cart-info">
+            <h3>Fallout NV</h3>
+            <p>$7.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-total">
+        <h3>Total</h3>
+        <p>$40.93</p>
+        <button class="buy-button"><i class="fas fa-credit-card"></i> Buy</button>
+      </div>
+    </section>
+  </aside>
+</main>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/supabaseClient.js"></script>
+</body>
+</html>
